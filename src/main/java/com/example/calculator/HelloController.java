@@ -86,7 +86,7 @@ public class HelloController {
     }
     @FXML
     protected void onSignButtonClick() {
-        if(Integer.parseInt(tfInput.getText()) > 0.0){
+        if(Double.parseDouble(tfInput.getText()) > 0){
             sb.append("-").append(tfInput.getText());
         } else {
             sb.append(tfInput.getText());
